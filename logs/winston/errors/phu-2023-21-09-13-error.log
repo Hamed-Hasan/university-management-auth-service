@@ -1,0 +1,90 @@
+Thu Sep 21 2023 13:24:43 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ Cannot read properties of null (reading 'year')
+Thu Sep 21 2023 13:28:27 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ Cannot read properties of null (reading 'year')
+Thu Sep 21 2023 13:41:45 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "student",
+      "academicSemester"
+    ],
+    "message": "Academic semester is required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "student",
+      "academicDepartment"
+    ],
+    "message": "Academic department is required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "student",
+      "academicFaculty"
+    ],
+    "message": "Academic faculty is required"
+  }
+]
+Thu Sep 21 2023 13:48:48 } [PH] error: AcademicDepartment validation failed: academicFaculty: Path `academicFaculty` is required.
+Thu Sep 21 2023 13:51:32 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "student",
+      "academicDepartment"
+    ],
+    "message": "Academic department is required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "student",
+      "academicFaculty"
+    ],
+    "message": "Academic faculty is required"
+  }
+]
+Thu Sep 21 2023 13:54:11 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "student",
+      "academicDepartment"
+    ],
+    "message": "Academic department is required"
+  }
+]
+Thu Sep 21 2023 13:54:34 } [PH] error: AcademicDepartment validation failed: academicFaculty: Path `academicFaculty` is required.
+Thu Sep 21 2023 13:57:53 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "student",
+      "academicDepartment"
+    ],
+    "message": "Academic department is required"
+  }
+]
+Thu Sep 21 2023 13:58:57 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ academicSemester.year.substring is not a function

@@ -1,0 +1,4 @@
+Wed Sep 20 2023 14:30:55 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ academicSemester.year.substring is not a function
+Wed Sep 20 2023 14:32:5 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ Cannot read properties of null (reading 'year')
+Wed Sep 20 2023 14:34:6 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ Cannot read properties of null (reading 'year')
+Wed Sep 20 2023 14:36:3 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ Cannot read properties of null (reading 'year')

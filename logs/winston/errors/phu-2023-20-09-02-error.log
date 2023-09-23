@@ -1,0 +1,107 @@
+Wed Sep 20 2023 2:39:34 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ Cast to ObjectId failed for value "44c42d0d-501d-410e-9bc3-dcd73565f7c3" (type string) at path "_id" for model "AcademicSemester"
+Wed Sep 20 2023 2:40:3 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ Cast to ObjectId failed for value "44c42d0d-501d-410e-9bc3-dcd73565f7c3" (type string) at path "_id" for model "AcademicSemester"
+Wed Sep 20 2023 2:41:9 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "student",
+      "academicSemester"
+    ],
+    "message": "Academic semester is required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "student",
+      "academicDepartment"
+    ],
+    "message": "Academic department is required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "student",
+      "academicFaculty"
+    ],
+    "message": "Academic faculty is required"
+  }
+]
+Wed Sep 20 2023 2:45:30 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "student",
+      "academicSemester"
+    ],
+    "message": "Academic semester is required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "student",
+      "academicDepartment"
+    ],
+    "message": "Academic department is required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "student",
+      "academicFaculty"
+    ],
+    "message": "Academic faculty is required"
+  }
+]
+Wed Sep 20 2023 2:49:58 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "student",
+      "academicSemester"
+    ],
+    "message": "Academic semester is required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "student",
+      "academicDepartment"
+    ],
+    "message": "Academic department is required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "student",
+      "academicFaculty"
+    ],
+    "message": "Academic faculty is required"
+  }
+]

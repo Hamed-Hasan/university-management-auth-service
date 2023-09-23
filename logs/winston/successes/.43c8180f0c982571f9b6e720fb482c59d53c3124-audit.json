@@ -1,0 +1,45 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "D:\\Next-Level\\redis\\university-management-auth-service\\logs\\winston\\successes\\.43c8180f0c982571f9b6e720fb482c59d53c3124-audit.json",
+    "files": [
+        {
+            "date": 1695149011905,
+            "name": "D:\\Next-Level\\redis\\university-management-auth-service\\logs\\winston\\successes\\phu-2023-19-09-21-success.log",
+            "hash": "b51ea57453e807f393e41895b365b2589aea8db26fec8f900be687f1917f1ac1"
+        },
+        {
+            "date": 1695150856604,
+            "name": "D:\\Next-Level\\redis\\university-management-auth-service\\logs\\winston\\successes\\phu-2023-19-09-22-success.log",
+            "hash": "b41adcb0c9518fa3f4f4487408f006e09a80b57aa15a9e034df22989710d8a6c"
+        },
+        {
+            "date": 1695166687481,
+            "name": "D:\\Next-Level\\redis\\university-management-auth-service\\logs\\winston\\successes\\phu-2023-20-09-02-success.log",
+            "hash": "6da29f478a372bd5c96821bd9031f82f9c2830bfd91c9728f2b77006031bd83c"
+        },
+        {
+            "date": 1695209288979,
+            "name": "D:\\Next-Level\\redis\\university-management-auth-service\\logs\\winston\\successes\\phu-2023-20-09-14-success.log",
+            "hash": "e4550ae046899f26218881350e712f15601bd74d98069711b0779b36b42d24a3"
+        },
+        {
+            "date": 1695291563590,
+            "name": "D:\\Next-Level\\redis\\university-management-auth-service\\logs\\winston\\successes\\phu-2023-21-09-13-success.log",
+            "hash": "0227d6f719e1827cfe84ef27b2406e7d0546abaf9e8b340227de666e2208ac97"
+        },
+        {
+            "date": 1695294132714,
+            "name": "D:\\Next-Level\\redis\\university-management-auth-service\\logs\\winston\\successes\\phu-2023-21-09-14-success.log",
+            "hash": "4d7b88e150c30f805e0d071751a1c26d8a45b76932fc06743a1a8abd288b197e"
+        },
+        {
+            "date": 1695298578529,
+            "name": "D:\\Next-Level\\redis\\university-management-auth-service\\logs\\winston\\successes\\phu-2023-21-09-15-success.log",
+            "hash": "0b42f207f73924e556ac769749ae7b8c6eb5eaf3434a72b337fdb38ec4b107ae"
+        }
+    ],
+    "hashType": "sha256"
+}
