@@ -91,3 +91,66 @@ const getAllDepartments = async (
     data: result,
   };
 };
+
+const updateDepartment = async (
+  id: string,
+  payload: Partial<IAcademicDepartment>
+): Promise<IAcademicDepartment | null> => {
+  const result = await AcademicDepartment.findOneAndUpdate(
+    { _id: id },
+    payload,
+    {
+      new: true,
+    }
+  ).populate('academicFaculty');
+
+  return result;
+};
+
+const deleteDepartment = async (
+  id: string
+): Promise<IAcademicDepartment | null> => {
+  const result = await AcademicDepartment.findByIdAndDelete(id);
+  return result;
+};
+
+const insertIntoDBFromEvent = async (e: AcademicDepartmentCreatedEvent): Promise<void> => {
+  const academicFaculty = await AcademicFaculty.findOne({ syncId: e.academicFacultyId });
+  const payload = {
+    title: e.title,
+    academicFaculty: academicFaculty?._id,
+    syncId: e.id
+  };
+
+  await AcademicDepartment.create(payload);
+};
+
+const updateOneInDBFromEvent = async (e: AcademicDepartmentUpdatedEvent): Promise<void> => {
+  const academicFaculty = await AcademicFaculty.findOne({ syncId: e.academicFacultyId });
+  const payload = {
+    title: e.title,
+    academicFaculty: academicFaculty?._id
+  };
+
+  await AcademicDepartment.findOneAndUpdate(
+    { syncId: e.id },
+    {
+      $set: payload
+    }
+  );
+};
+
+const deleteOneFromDBFromEvent = async (syncId: string): Promise<void> => {
+  await AcademicDepartment.findOneAndDelete({ syncId });
+};
+
+export const AcademicDepartmentService = {
+  createDepartment,
+  getSingleDepartment,
+  getAllDepartments,
+  updateDepartment,
+  deleteDepartment,
+  insertIntoDBFromEvent,
+  updateOneInDBFromEvent,
+  deleteOneFromDBFromEvent
+};
