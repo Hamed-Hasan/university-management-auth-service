@@ -50,3 +50,39 @@ const getAllFaculties = catchAsync(async (req: Request, res: Response) => {
     data: result.data,
   });
 });
+
+const updateFaculty = catchAsync(
+  catchAsync(async (req: Request, res: Response) => {
+    const { id } = req.params;
+    const updatedData = req.body;
+
+    const result = await AcademicFacultyService.updateFaculty(id, updatedData);
+
+    sendResponse<IAcademicFaculty>(res, {
+      statusCode: httpStatus.OK,
+      success: true,
+      message: 'Academic faculty updated successfully',
+      data: result,
+    });
+  })
+);
+
+const deleteFaculty = catchAsync(async (req: Request, res: Response) => {
+  const { id } = req.params;
+  const result = await AcademicFacultyService.deleteByIdFromDB(id);
+
+  sendResponse<IAcademicFaculty>(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: 'Academic faculty deleted successfully',
+    data: result,
+  });
+});
+
+export const AcademicFacultyController = {
+  createFaculty,
+  getSingleFaculty,
+  getAllFaculties,
+  updateFaculty,
+  deleteFaculty,
+};
